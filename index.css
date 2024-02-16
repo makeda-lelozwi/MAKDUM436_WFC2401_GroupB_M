@@ -185,7 +185,7 @@ ul {
   grid-template-rows: repeat(3, 260px);
   grid-template-columns: repeat(3, auto);
   gap: 5px;
-  background: var(--main-bg-clr);
+  /* background: var(--main-bg-clr); */
 }
 
 .services-title {
@@ -196,8 +196,8 @@ ul {
 
 .service-one {
   grid-row-start: 1;
-  grid-column-start: 3;
-  
+  grid-column-start: 1;
+  margin-left: 2rem;
 }
 
 .service-one h3 {
@@ -206,7 +206,7 @@ ul {
 
 .service-two {
   grid-row-start: 2;
-  grid-column-start: 3;
+  grid-column-start: 2;
   
 }
 
@@ -219,6 +219,16 @@ ul {
   writing-mode: vertical-rl;
   font-family: var(--fs-body);
   float: right;
+  color: var(--main-bg-clr);
 }
 
+/* Portfolio */
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
 
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
