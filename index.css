@@ -70,5 +70,59 @@ h3 { font-size: var(--fs-h3);}
     --fs-h3: 1.5rem;
     --fs-body: 1.125rem;
   }
+
+  .logo {
+    display: block;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Nav Bar */
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  display: inline;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--main-text-clr);
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.social-list__link {
+  color: var(--main-text-clr);
+  font-size: var(--fs-h3);
+
+}
+
+/*  */
 
