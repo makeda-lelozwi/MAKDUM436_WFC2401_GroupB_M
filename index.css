@@ -17,7 +17,7 @@
   --fourth-bg-clr: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%);
 
   --main-text-clr: black;
-  --secondary-text-clr: #eef2e2;
+  --secondary-text-clr: #38598b;
   --tertiary-text-clr: #f5f9ee;
 
   --fs-h1: 3rem;
@@ -79,6 +79,12 @@ h3 { font-size: var(--fs-h3);}
     flex-wrap: wrap;
   }
 
+  .social-list__link {
+    color: var(--main-text-clr);
+    font-size: var(--fs-h3);
+    margin-left: 2rem;;
+  }
+
   .intro {
     display: flex;
     gap: 1.25rem;
@@ -129,7 +135,7 @@ ul {
 }
 
 .social-list__link {
-  color: var(--main-text-clr);
+  color: var(--secondary-text-clr);
   font-size: var(--fs-h3);
 
 }
@@ -169,6 +175,50 @@ ul {
   border-radius: 5%;
 }
 
+/* My Services */
+.my-services {
+  background: #113f67;
+}
 
+.services {
+  display: grid;
+  grid-template-rows: repeat(3, 260px);
+  grid-template-columns: repeat(3, auto);
+  gap: 5px;
+  background: var(--main-bg-clr);
+}
+
+.services-title {
+  color: var(--main-bg-clr);
+  padding: 1rem;
+} 
+
+
+.service-one {
+  grid-row-start: 1;
+  grid-column-start: 3;
+  
+}
+
+.service-one h3 {
+  margin-top: 0.25rem;
+}
+
+.service-two {
+  grid-row-start: 2;
+  grid-column-start: 3;
+  
+}
+
+.service-three {
+  grid-row-start: 3;
+  grid-column-start: 3;
+}
+
+.services h3 {
+  writing-mode: vertical-rl;
+  font-family: var(--fs-body);
+  float: right;
+}
 
 
