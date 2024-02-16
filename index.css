@@ -28,6 +28,10 @@
 
 /* General Styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--main-bg-clr);
   color: var(--main-text-clr);
