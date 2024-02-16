@@ -30,12 +30,36 @@
 
 body {
   background: var(--main-bg-clr);
+  color: var(--main-text-clr);
+  margin: 0;
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Typography */
+h1, 
+h2, 
+h3 {
+  font-family: var(--ff-primary);
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 { font-size: var(--fs-h1);}
+h2 { font-size: var(--fs-h2);}
+h3 { font-size: var(--fs-h3);}
 
 /* Media Queries */
 @media (min-width: 320px) {
   :root {
-    --fs-h1: 4.5;
+    --fs-h1: 4.5rem;
     --fs-h2: 3.75rem;
     --fs-h3: 1.5rem;
     --fs-body: 1.125rem;
